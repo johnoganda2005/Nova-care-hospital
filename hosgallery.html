@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Our Gallery</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			font-style: italic;
+			background: #111 url(background.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		@media screen and (max-width: 768px){
+			.gallery{
+				padding: 40px 15px;
+			}
+			.gallery h2{
+				font-size: 24px;
+			}
+			.gallery-intro{
+				grid-template-columns: 1fr;
+			}
+			.container img{
+				height: auto;
+			}
+			.caption{
+				font-size: 14px;
+				padding: 8px;
+			}
+
+		}
+		.gallery{
+			background-color: aliceblue
+			background: #111 url(background.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 60px 20px;
+			font-family: sans-serif;
+			text-align: center;
+		}
+		.gallery h2{
+			font-size: 34px;
+			color: mediumblue;
+			margin-bottom: 10px;
+		}
+		.gallery-intro{
+			color: black;
+			margin-bottom: 40px;
+			font-size: 19px;
+		}
+		.gallery-grid{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			max-width: 1100px;
+			margin: auto;
+		}
+		.container{
+			position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 1.0);
+            transition: transform 0.3s ease;
+            background-color: silver;
+            color: green;
+		}
+		.container:hover{
+			transform: scale(1.03);
+
+		}
+		.container img{
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			display: block;
+		}
+		
+		.caption{
+			background-color: rgba(25, 25, 112, 1.0);
+			color: white;
+			padding: 10px;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<section class="gallery">
+		<h2>Our Gallery</h2>
+		<p class="gallery-intro"> A glimpse into NovaCare where healing happens, care comes first and lives are transformed.</p>
+		<div class="gallery-grid">
+	<div class="container">
+		<h2>Modern Impatient Ward</h2>
+		<img src="ward.png" alt="Modern Impatient Ward">
+		<div class="caption">Spacious and serene rooms designed for healing. Comfortable beds, natural lighting and 24/7 monitoring. Where patient recovery begins with dignity and care.
+		</div>
+	</div>
+	<div class="container">
+		<h2>Fully Equipped Laboratory</h2>
+		<img src="background.png" alt="Fully Equiped Laboratory">
+		<div class="caption">
+			Cutting-edge diagnostic tools and real-time analysis. Fast, accurate results for brtter medical decisions. Trusted by doctors, valued by patients.
+		</div>
+	</div>
+	<div class="container">
+		<h2>Sterile Operation Theatre</h2>
+		<img src="surgery.png" alt="Sterile Operation Theatre">
+		<div class="caption">State-of-the-art surgical suites with strict hygiene. precious equipment for complex procedures. Safety, skill and teamwork at every operation.</div>
+	</div>
+	<div class="container">
+		<h2>On-site Pharmacy</h2>
+		<img src="pharmacy.png" alt="On-site Pharmacy">
+		<div class="caption">Easily accessible medication wirh expert guidence. stocked with quality, affoerdable treatments. Your health managed under one  roof.</div>
+	</div>
+	<div class="container">
+		<h2>Ambulance Services</h2>
+		<img src="amblance.png" alt="24/7 Ambulance Services">
+		<div class="caption">Rapid response units for emergencies, day or night.Equipped with life-support and trained paramedics. Because every second counts.</div>
+	</div>
+	<div class="container">
+		<h2>Dedicated Medical Team</h2>
+		<img src="staff.png" alt="Dedicated Medical Team">
+		<div class="caption">Friendly, skilled and compassionate caregivers. Committed to personalized patient care. The heart of everything we do.
+		</div>
+	</div>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Doctors</title>
+	<style type="text/css">
+		body{
+			font-family: geneva;
+			margin: 0;
+			padding: 20px;
+			color: #333;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+		.safety{
+			border: 1px solid black;
+			padding: 30px;
+			max-width: 900px;
+			margin-bottom: 100px;
+			margin-left: 150px;
+			background-color: lightblue;
+			border-radius: 12px;
+			box-shadow: 0 8px 25px rgba(255, 0, 0, 6.1);
+			text-align: center;
+		}
+		.safety:hover{
+			box-shadow: 0 18px 40px green;
+			transform: translateX(-50px);
+			transition: 1s;
+			background: linear-gradient(to right, blue, skyblue, lightblue);
+		}
+		.doctors{
+			padding: 60px 20px;
+			background: #111 url(background.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-align: center;
+			font-family: geneva;
+			color: ;
+		}
+		.doctors h2{
+			font-size: 36px;
+			color: navy;
+			margin-bottom: 10px;
+			letter-spacing: 1px;
+		}
+		.doctors p{
+			font-size: 16px;
+			max-width: 700px;
+			margin: 0 auto 40px;
+			color: dimgray;
+		}
+		.doctor-profiles{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			justify-content: center;
+		}
+		.doctor{
+			background-color: aqua;
+			border-radius: 14px;
+			padding: 20px;
+			width: 550px;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 30px;
+			margin-left: 300px;
+			position: relative;
+			overflow: hidden;
+			box-shadow: 0 18px 40px green;
+		}
+		.doctor:hover{
+			transform: translateY(-10px);
+			box-shadow: 0 12px 30px rgba(255, 0, 0, 6.08);
+		}
+		.doctor img{
+			width: 120px;
+			height: 120px;
+			object-fit: cover;
+			border-radius: 10px;
+			margin-bottom: 15px;
+			box-shadow: 0 4px 10px rgba(0, 0, 255, 0.1);
+		}
+		.doctor h3{
+			font-size: 20px;
+			color: navy;
+			margin: 10px 0 5px;
+		}
+		.doctor p{
+			font-size: 14px;
+			margin: 5px 0;
+			color: black;
+
+		}
+		.doctor p strong{
+			color: royalblue;
+		}
+		.doctor bio{
+			font-size: 13px;
+			color: slategray;
+			margin-top: 10px;
+			line-height: 1.6;
+		}
+		.doctor a{
+			text-decoration: none;
+			border: 1px solid black;
+			border-radius: 10px;
+			background-color: brown;
+            padding: 10px;
+            width: 150px !important
+            color: white;
+
+		}
+		.doctor a:hover{
+			background-color: green;
+			transition: 1s;
+		}
+				
+		footer{
+			background-color: blue;
+			color: white;			
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			padding: 10px;
+		}
+		@media screen and (max-width: 600px){
+			.safety{
+				width: 120%;
+				padding: 10px;
+				font-size: 16px;
+				color: green;
+				justify-content: center;
+				align-items: center;
+				margin-left: 0;
+				object-fit: fill;
+			}
+			body{
+				width: 75%;
+				margin: 0;
+			}
+			.doctor{
+				width: 120%;
+				padding: 10px;
+				font-size: 16px;
+				color: green;
+				justify-content: center;
+				align-items: center;
+				margin-left: 0;
+				object-fit: fill;
+
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<section class="doctors">
+		<div class="safety">
+			<h2>Our Doctors</h2>
+
+		<p>At NovaCare, we are proud to have a dedicated team of highly skilled and compassionate doctors who are committed to personalized care to each patient. Our medical professionals specialize in various fields, ensuring comprehensive health services for all age groups.</p>
+	</div>
+
+		<div class="doctore-profiles">
+			<div class="doctor">
+				<img src="my-photo.jpg" alt="Dr. John Oganda">
+				<h3>Dr. John Oganda</h3>
+				<p><strong>Specialty:</strong>Cardiology</p>
+				<p><strong>Experience:</strong>12+ years</p>
+				<p class="bio">Dr. John is renowed heart specialist who uses cutting-edge techniques in diagnosing and managing cardiovascular diseases with patient-centered approach.</p> <br> <br>
+				<a href="book.html">Book Now</a>
+			</div>
+
+			<div class="doctor">
+				<img src="reb.jpg" alt="Dr. Rebecca Gesare">
+				<h3>Dr. Rebecca Gesare</h3>
+				<p><strong>Specialty:</strong>Pediatrics</p>
+				<p><strong>Experience:</strong>10+ years</p>
+				<p class="bio">Dr. Rebecca provides compassionate care to children of all ages. She is dedicated to helping young patients grow up healthy and strong through preventive and responsive care.</p> <br> <br>
+				<a href="book.html">Book Now</a>
+			</div>
+
+			<div class="doctor">
+				<img src="dan.jpg" alt="Dr. Daniel Muthoka">
+				<h3>Dr. Daniel Muthoka</h3>
+				<p><strong>Specialty:</strong>Obstetrics</p>
+				<p><strong>Experience:</strong>9+ years</p>
+				<p class="bio">Dr. Daniel offers expert care in women's health, maternity services and reproductive health. He is known for his professional yet warm approach with patients.</p> <br> <br>
+				<a href="book.html">Book Now</a>
+			</div>
+
+			<div class="doctor">
+				<img src="wendy.jpg" alt="Dr. Wendy Karimi">
+				<h3>Dr. Wendy Karimi</h3>
+				<p><strong>Specialty:</strong>General Surgery</p>
+				<p><strong>Experience:</strong>11+ years</p>
+				<p class="bio">Dr. Karimi handles a wide range of surgical procedures with precision. She is dedicated to ensuring patient safety and comfort before, during and after surgery.</p> <br> <br>
+				<a href="book.html">Book Now</a>
+			</div>
+
+			<div class="doctor">
+				<img src="jos.jpg" alt="Dr. Joseph Momanyi">
+				<h3>Dr. Joseph Momanyi</h3>
+				<p><strong>Specialty:</strong>Orthopedic</p>
+				<p><strong>Experience:</strong>8+ years</p>
+				<p class="bio">Dr. Momanyi specializes in born and joint care, treating fractures, sport injuries and joint conditions with a focus on fast recovery and long term srength.</p> <br> <br>
+				<a href="book.html">Book Now</a>
+			</div>
+
+
+		</div>
+	</section>
+	<footer>
+		&copy; 2025 NovaCare Hospital. Built on trust, Guided by care.
+	</footer>
+
+</body>
+</html>
